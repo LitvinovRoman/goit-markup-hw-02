@@ -26,8 +26,6 @@ h6 {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -48,6 +46,21 @@ a {
 
 /* шапка*/
 
+.container {
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.cont {
+  display: flex;
+  padding-left: 331px;
+}
+
 .header :focus,
 .header :hover {
   color: #2196f3;
@@ -59,8 +72,6 @@ a {
 
 .header {
   background-color: #ffffff;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .logo-link {
@@ -80,14 +91,22 @@ a {
   color: #ffffff;
 }
 
-.link {
+.navigation-list .link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
+.navigation-list .link:not(:first-child) {
+  margin-left: 50px;
+}
+
 .header-text {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
 }
 
